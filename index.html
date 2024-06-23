@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            background-color: #78c51c;
+            padding: 20px 50px;
+            border-bottom: 20px solid #2a6f28;
+            
+            div {
+                display: inherit;
+                justify-content: right;
+                width: 980px;
+
+                nav {
+                    width: 200px;
+    
+                    display: inherit;
+                    justify-content: space-between;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: #424242;
+                }
+
+            }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 0px 0px 100px 0px;
+            
+            #display {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color: #f5f5f5;
+                padding: 100px 20px;
+
+                h2 {
+                    span {
+                        color: #78c51c;
+                    }
+
+                    font-weight: 400;
+                }
+
+                h1 {
+                    font-size: 60px;
+                    line-height: 3.5rem;
+                    padding: 50px 0px;
+                    width: 450px;
+                }
+
+                a {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: 600;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+
+                .display-buttons-container {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 300px;
+                }
+
+                .green-btn {
+                    color: #f5f5f5;
+                    background-color: #78c51c;
+                    border: 1px solid #78c51c;
+                }
+
+                .gray-btn {
+                    color: #424242;
+                    border: 1px solid #d4d4d4;
+                }
+
+                img {
+                    border-radius: 15px;
+                }
+            }
+
+            #mission {
+                width: 980px;
+                margin: 100px auto;
+
+                h2 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #635454;
+                }
+
+                h3 {
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+
+                .cards-container {
+                    display: flex;
+                    margin: 40px 0;
+                    justify-content: space-between;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: start;
+                        width: 480px;
+                        height: 300px;
+                        border-radius: 10px;
+                        padding: 10px 20px;
+
+                        h4 {
+                            font-size: 23px;
+                        }
+
+                        .card-text-container {
+                            height: 100px;
+                        }
+                    }
+
+                    a {
+                        padding: 10px 30px 10px 20px;
+                        border: none;
+                        color: #424242;
+                        background-color: transparent;
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+
+                    .card1 {
+                        padding: 20px;
+                        background-color: #538d22;
+                    }
+
+                    .card2 {
+
+                        padding: 20px;
+                        background-color: #aad576;
+                    }
+                }
+            }
+
+            #ongs {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 980px;
+                height: 400px;
+                margin: 0 auto 100px auto;
+
+                img {
+                    margin-right: 20px;
+                }
+
+                h2 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #635454;
+                }
+
+                .info {
+                    color: #f5f5f5 !important;
+                    background-color: #78c51c;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 15px 30px;
+                }
+
+                .ong-card {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 50px;
+                    border: 1px solid #d4d4d4;
+                    border-radius: 10px;
+
+                    h4 {
+                        font-size: 23px;
+                    }
+
+                    a {
+                        color: #424242;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            #support {
+                width: 980px;
+                margin: 0px auto;
+
+                h2 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #635454;
+                }
+
+                h3 {
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+                
+                div {
+                    display: flex;
+                    min-width: 500px;
+                    margin-top: 20px;
+
+                    .image-container {
+                        width: 300px;
+                        height: 300px;
+                        overflow: hidden;
+                        border-radius: 10px 0px 0px 10px;
+                    }
+
+                    .image-container img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .qrcode-container {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        border-radius: 0px 10px 10px 0px;
+                        align-items: center;
+                        padding: 20px 0px;
+                        color: #f5f5f5;
+                        background-color: #538d22;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            background-color: #78c51c;
+            padding: 20px 50px;
+            border-top: 20px solid #2a6f28;
+            
+            div {
+                align-items: center;
+                width: 980px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                a {
+                    color: #424242;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#ongs">ONG's</a>
+                <a href="#support">Apoie</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="display">
+            <div>
+                <h2><span>#</span> Cidade Visível</h2>
+                <h1>Conectando Pessoas e Causas Sociais</h1>
+                <div class="display-buttons-container">
+                    <a href="#support" class="green-btn">Quero apoiar →</a>
+                    <a href="#ongs" class="gray-btn">Conhecer as ong's</a>
+                </div>
+            </div>
+            <img width="600" height="337" src="./assets/img/people.jpg" alt="Pessoas com sacolas nas mãos">
+        </div>
+        <div id="mission">
+            <h2>missão</h2>
+            <h3>o mundo à sua volta pode ser muito melhor.</h2>
+            <div class="cards-container">
+                <div class="card1">
+                    <img width="50" height="50" src="./assets/img/building.svg" alt="Ícone de saco de dinheiro">
+                    <div class="card-text-container">
+                        <h4>Para quem precisa</h4>
+                        <p>Conheça as organizações presentes em nossa cidade.</p>
+                    </div>
+                    <a href="#support">Veja Mais →</a>
+                </div>
+                <div class="card2">
+                    <img width="50" height="50" src="./assets/img/money.svg" alt="Ícone de saco de dinheiro">
+                    <div class="card-text-container">
+                        <h4>Para quem apoia</h4>
+                        <p>Contribua financeiramente com as organizações.</p>
+                    </div>
+                    <a href="#ongs">Veja Mais →</a>
+                </div>
+            </div>
+        </div>
+        <div id="ongs">
+            <h2>ong's</h2>
+            <div class="ong-card">
+                <div style="display: flex;">
+                    <img width="75" height="75" src="./assets/img/bicho-sem-teto.jpeg" alt="ícone da instituição Bicho sem teto">
+                    <div>
+                        <h4>Bicho sem Teto</h4>
+                        <p>R. Das Gaviotas, 757 - Botafogo</p>
+                        <p>
+                            Contato: <a href="tel:+5519999999999">(19) 99999-9999</a>
+                        </p>
+                    </div>
+                </div>
+                <a href="" class="info">+ Mais Informações</a>
+            </div>
+            <div class="ong-card">
+                <div style="display: flex;">
+                    <img width="75" height="75" src="./assets/img/abevec.jpeg" alt="ícone da instituição Abevec">
+                    <div>
+                        <h4>Abevec</h4>
+                        <p>R. Das Gaviotas, 757 - Botafogo</p>
+                        <p>
+                            Contato: <a href="tel:+5519999999999">(19) 99999-9999</a>
+                        </p>
+                    </div>
+                </div>
+                <a href="" class="info">+ Mais Informações</a>
+            </div>
+            <div class="ong-card">
+                <div style="display: flex;">
+                    <img width="75" height="75" src="./assets/img/suas.jpeg" alt="ícone da instituição Assistência Social">
+                    <div>
+                        <h4>Assistência social</h4>
+                        <p>R. Das Gaviotas, 757 - Botafogo</p>
+                        <p>
+                            Contato: <a href="tel:+5519999999999">(19) 99999-9999</a>
+                        </p>
+                    </div>
+                </div>
+                <a href="" class="info">+ Mais Informações</a>
+            </div>
+        </div>
+        <div id="support">
+            <h2>apoie</h2>
+            <h3>pequenos gestor podem mudar uma vida.</h2>
+            <div>
+                <div class="image-container">
+                    <img width=200 height=200 src="./assets/img/hands.jpeg" alt="Mãos femininas com moedas e bilhete">
+                </div>
+                <div class="qrcode-container">
+                    <img width=150 height=150 src="./assets/img/qrcode.jpeg" alt="QRCode">
+                    <p>Mire seu celular e scaneie o QRCode</p>
+                    <p>Não funcionou? Entre em contato com a gente :)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Feito com ❤️</p>
+            <p>Todos os direitos reservados®</p>
+            <address>
+                Rua Das Araras, 12 - Centro <br>
+                <a href="tel:+551938568720">(19) 3856-8720</a> <br>
+                <a href="tel:+551986328-9000">(19) 86328-9000</a>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>
